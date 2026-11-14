@@ -14,22 +14,3 @@ This project fine-tunes six open-source LLMs to predict **cause of death** from 
 4. **Predict:** every candidate cause is scored by log-likelihood and ranked.
 5. **Evaluate:** Top-1, Top-5 and CSMF accuracy, plus F1 and ROC AUC.
 
-## Quick start
-
-1. Download the PHMRC adult, child and neonate CSVs and the codebook from [IHME GHDx](https://ghdx.healthdata.org/) (data not included).
-2. Set `DATA_PATHS`, `CODEBOOK_PATH` and `MODEL_NAME` in the notebook's Configuration cell.
-3. Run all cells on a CUDA GPU.
-
-```bash
-pip install torch transformers datasets peft trl bitsandbytes accelerate scikit-learn pandas matplotlib seaborn openpyxl scipy
-```
-
-## Results
-
-| Model | Module | Top-1 | Top-5 | CSMF |
-|---|---|---|---|---|
-| | | | | |
-
-## Note
-
-Research prototype only. Not for clinical use or official mortality coding without independent validation.
